@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/MyCoupons/pom.xml" />
         <option value="$PROJECT_DIR$/DealService/pom.xml" />
         <option value="$PROJECT_DIR$/ProductDealService/pom.xml" />
+        <option value="$PROJECT_DIR$/GatewayAPI/pom.xml" />
       </list>
     </option>
   </component>

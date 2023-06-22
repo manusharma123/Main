@@ -26,6 +26,18 @@ public class Product {
     public Product() {
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id='" + id + '\'' +
+                ", platformName='" + platformName + '\'' +
+                ", dealCode='" + dealCode + '\'' +
+                ", email='" + email + '\'' +
+                ", transactionType='" + transactionType + '\'' +
+                ", transactionId='" + transactionId + '\'' +
+                '}';
+    }
+
     public String getId() {
         return id;
     }

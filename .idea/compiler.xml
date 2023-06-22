@@ -14,12 +14,14 @@
         <module name="AddCoupons" />
         <module name="ViewService" />
         <module name="DealService" />
+        <module name="GatewayAPI" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AddCoupons" target="17" />
       <module name="DealService" target="17" />
       <module name="EurekaServer" target="17" />
+      <module name="GatewayAPI" target="17" />
       <module name="MyCoupons" target="17" />
       <module name="ProductDealService" target="17" />
       <module name="UserService" target="17" />
@@ -31,6 +33,7 @@
       <module name="AddCoupons" options="-parameters" />
       <module name="DealService" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
+      <module name="GatewayAPI" options="-parameters" />
       <module name="MyCoupons" options="-parameters" />
       <module name="ProductDealService" options="-parameters" />
       <module name="UserService" options="-parameters" />

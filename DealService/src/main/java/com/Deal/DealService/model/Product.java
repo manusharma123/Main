@@ -9,19 +9,33 @@ public class Product {
     @Id
     private String id;
     private String platformName;
+    private String dealName;
     private String dealType;
     private String dealCode;
     private int price;
 
-    public Product(String id, String platformName, String dealType, String dealCode, int price) {
+    public Product() {
+    }
+
+    public Product(String id, String platformName, String dealName, String dealType, String dealCode, int price) {
         this.id = id;
         this.platformName = platformName;
+        this.dealName = dealName;
         this.dealType = dealType;
         this.dealCode = dealCode;
         this.price = price;
     }
 
-    public Product() {
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id='" + id + '\'' +
+                ", platformName='" + platformName + '\'' +
+                ", dealName='" + dealName + '\'' +
+                ", dealType='" + dealType + '\'' +
+                ", dealCode='" + dealCode + '\'' +
+                ", price=" + price +
+                '}';
     }
 
     public String getId() {
@@ -38,6 +52,14 @@ public class Product {
 
     public void setPlatformName(String platformName) {
         this.platformName = platformName;
+    }
+
+    public String getDealName() {
+        return dealName;
+    }
+
+    public void setDealName(String dealName) {
+        this.dealName = dealName;
     }
 
     public String getDealType() {
@@ -62,16 +84,5 @@ public class Product {
 
     public void setPrice(int price) {
         this.price = price;
-    }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "id='" + id + '\'' +
-                ", platformName='" + platformName + '\'' +
-                ", dealType='" + dealType + '\'' +
-                ", dealCode='" + dealCode + '\'' +
-                ", price=" + price +
-                '}';
     }
 }
